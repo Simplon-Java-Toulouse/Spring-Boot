@@ -13,7 +13,8 @@ Préparation OPQUAST
 
 **Objectif : Reprendre le projet java EE OnlineBank et le refaire entièrement en utilisant le framework SPRING**
 
-**Configuration de Spring boot**
+
+**Configuration de Spring boot :**
 
 24.1 Depuis le marketplace, ajouter à Eclipse spring tools
 
@@ -27,7 +28,7 @@ sql/jpa + sql/mysql + web/web + template engine/themeleaf + security/security + 
 
 24.4 dans fichier pom.xml, mettre entre commentaire la gestion securité de spring (inutile pour le moment, peut bloquer votre travail)
 
-**Ajout des entités**
+**Ajout des ENTITIES :**
 
 25.1 ajouter un package co.simplon.entities dans lequel vous ajouterez vos classes en respectant scrupuleusement les diagrammes de classes et donc les associations !
 ![center](/diag.png)
@@ -36,7 +37,7 @@ sql/jpa + sql/mysql + web/web + template engine/themeleaf + security/security + 
 
 25.3 Verifier que la base de donnée a bien été généré, pour ce faire, vous devez d'abord spécifier les data source dans src/main/resources/application.properties puis démarrer votre appli pour tester si les tables ont bien été crées.
 
-**couche DAO**
+**couche DAO :**
 
 26.1 Mettre en place la couche DAO (co.simplon.dao) à l'aide d'un package puis ajouter les interfaces ClientRepository, CompteRepository et OperationRepository comme dans l'exemple :
 
@@ -48,7 +49,7 @@ sql/jpa + sql/mysql + web/web + template engine/themeleaf + security/security + 
     @Autowired	//Mecanisme permettant d'injecter cet attribut afin de l'utiliser
 	  private ClientRepository clientRepository;
 
-**couche METIER**
+**couche METIER :**
 
 27.1 Il faut réaliser la couche métier de votre appli(co.simplon.metier), implémenter l'interface suivante :
     
@@ -96,7 +97,7 @@ Recherches stages & alternances
 
 Préparation OPQUAST
 
-**Couche WEB**
+**Couche WEB :**
 
 28.1 Pour commencer il faut ajouter un package co.simplon.web dans lequel vous devez réaliser votre classe BankController
     
